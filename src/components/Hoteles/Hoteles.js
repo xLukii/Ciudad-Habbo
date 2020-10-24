@@ -27,7 +27,7 @@ class Hoteles extends React.Component{
           // Intentar consulta.
           try {
                // Consulta.
-               const response = await fetch('http://www.json-generator.com/api/json/get/cgcWXofpAi')
+               const response = await fetch('https://www.json-generator.com/api/json/get/cgcWXofpAi')
                const data     = await response.json();
 
                // Actualizar estado.
