@@ -24,13 +24,17 @@ class Header extends React.Component {
                               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                               
                               <Navbar.Collapse id="basic-navbar-nav">
-                                   <Nav className="mr-auto">
+                                   <Nav className="container">
                                         <Nav.Item>
                                              <Link to="/" className="nav-link">Inicio</Link>
                                         </Nav.Item>
 
                                         <Nav.Item>
                                              <Link to="/hoteles" className="nav-link">Hoteles</Link>
+                                        </Nav.Item>
+
+                                        <Nav.Item className="ml-auto">
+                                             <Link to="/login" className="nav-link">Iniciar sesión</Link>
                                         </Nav.Item>
                                    </Nav>
                               </Navbar.Collapse>

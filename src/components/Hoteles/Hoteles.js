@@ -27,7 +27,7 @@ class Hoteles extends React.Component{
           // Intentar consulta.
           try {
                // Consulta.
-               const response = await fetch('http://www.json-generator.com/api/json/get/cpTUCopYpu')
+               const response = await fetch('http://www.json-generator.com/api/json/get/cgcWXofpAi')
                const data     = await response.json();
 
                // Actualizar estado.
@@ -47,19 +47,18 @@ class Hoteles extends React.Component{
      // Mostrar Hoteles.
      render(){
           return(
-               <React.Fragment> 
+               <React.Fragment>
                     <ListGroup className="list-group-flush">
                          {this.state.loading && (
-                                   <Skeleton count={5} height={45} />
+                              <Skeleton count={5} height={45} />
                          )}
-                        
+                    
                          {this.state.data.results.map(hotel => (
                               <ListGroupItem key={ hotel.id }>{ hotel.username }</ListGroupItem>
                          ))}
-                    </ListGroup>
+                    </ListGroup>     
                </React.Fragment>
-          );
-     }
+          )}
 }
 
 export default Hoteles;
