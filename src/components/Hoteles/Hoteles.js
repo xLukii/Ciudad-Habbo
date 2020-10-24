@@ -1,6 +1,5 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
-
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
 
 class Hoteles extends React.Component{
@@ -16,11 +15,12 @@ class Hoteles extends React.Component{
 
      // Obtener datos.
      componentDidMount() {
-          this.fetchData();
+          this.fetchHotels();
      }
 
      // Realizar consulta.
-     fetchData = async () => {
+     fetchHotels = async () => {
+          
           // Actualizar estado.
           this.setState({ loading: true, error: null })
 
@@ -50,7 +50,7 @@ class Hoteles extends React.Component{
                <React.Fragment> 
                     <ListGroup className="list-group-flush">
                          {this.state.loading && (
-                                   <Skeleton count={5} height={40} />
+                                   <Skeleton count={5} height={45} />
                          )}
                         
                          {this.state.data.results.map(hotel => (

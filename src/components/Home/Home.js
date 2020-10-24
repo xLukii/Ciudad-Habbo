@@ -18,7 +18,7 @@ class Home extends React.Component {
 
                                         <Card.Body>                                             
                                              <Card.Text>
-                                                  <Hoteles />
+                                                  <Hoteles type="moreVoted" />
                                              </Card.Text>
                                         </Card.Body>
                                    </Card>
@@ -30,7 +30,7 @@ class Home extends React.Component {
 
                                         <Card.Body>                                             
                                              <Card.Text>
-                                                  <Hoteles />
+                                                  <Hoteles type="azar" />
                                              </Card.Text>
                                         </Card.Body>
                                    </Card>
